@@ -17,12 +17,12 @@ Plug 'w0rp/ale'
 Plug 'galooshi/vim-import-js'
 Plug 'Shougo/denite.nvim'
 "snippets
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 "fzf
-"Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
-"Plug 'dyng/ctrlsf.vim'
+Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
+Plug 'dyng/ctrlsf.vim'
 
 "typescript
 Plug 'ianks/vim-tsx'
@@ -35,8 +35,6 @@ Plug 'junegunn/vim-easy-align' " Căn vị trí ký tự = thẳng hàng
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Tim kiem file
 Plug 'benmills/vimux'
 
-call plug#end()
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
-let g:python_host_prog = expand('C:\Python27\python.exe')
-let g:python3_host_prog = expand('C:\Python38\python.exe')
-let g:deoplete#enable_at_startup = 1
+call plug#end()

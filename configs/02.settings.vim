@@ -3,6 +3,9 @@ let mapleader = "\<Space>"
 filetype plugin on
 filetype plugin indent on
 
+let g:python_host_prog = expand('C:\Python27\python.exe')
+let g:python3_host_prog = expand('C:\Python38\python.exe')
+let g:deoplete#enable_at_startup = 1
 
 autocmd BufEnter * :set scroll=10
 syntax on
