@@ -5,6 +5,7 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+let NERDTreeShowHidden = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDTreeChDirMode=2
@@ -37,7 +38,7 @@ let g:ctrlp_custom_ignore = {
 " Prettier
 "let g:prettier#autoformat = 1
 "let g:prettier#config#print_width = 80
-"let g:prettier#config#trailing_comma = 'es5'
+let g:prettier#config#trailing_comma = 'es5'
 "let g:prettier#config#jsx_bracket_same_line = 'true'
 "let g:prettier#config#jsxSingleQuote = 'true'
 "let g:prettier#config#bracket_spacing = 'true'
@@ -111,7 +112,6 @@ let g:Lf_ShortcutF = '<C-P>'
 let g:Lf_PreviewInPopup = 1
 "ctrslf
 let g:ctrlsf_default_view_mode = 'compact'
-
 
 "***PYTHON SETUP***
 let g:jedi#completions_enabled = 0

@@ -32,6 +32,9 @@ Plug 'kien/ctrlp.vim' " Tìm kiếm file trên trong project hiện tại
 Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
 Plug 'junegunn/vim-easy-align' " Căn vị trí ký tự = thẳng hàng
 
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Tim kiem file
+Plug 'benmills/vimux'
+
 call plug#end()
 
 let g:python_host_prog = expand('C:\Python27\python.exe')
