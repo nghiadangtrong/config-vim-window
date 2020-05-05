@@ -14,10 +14,10 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
-Plug 'galooshi/vim-import-js'
+"Plug 'galooshi/vim-import-js'
 Plug 'Shougo/denite.nvim'
 "snippets
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 "fzf
@@ -25,16 +25,16 @@ Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 Plug 'dyng/ctrlsf.vim'
 
 "typescript
-Plug 'ianks/vim-tsx'
-Plug 'herringtondarkholme/yats.vim'
+"Plug 'ianks/vim-tsx'
+"Plug 'herringtondarkholme/yats.vim'
 
 Plug 'kien/ctrlp.vim' " Tìm kiếm file trên trong project hiện tại
 Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
 Plug 'junegunn/vim-easy-align' " Căn vị trí ký tự = thẳng hàng
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Tim kiem file
-Plug 'benmills/vimux'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Tim kiem file
+"Plug 'benmills/vimux'
 
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 call plug#end()

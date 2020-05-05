@@ -41,6 +41,7 @@ inoremap <silent> <c-l> <ESC>la
 inoremap <silent><expr><Tab> pumvisible() ? "\<C-N>" : "\<Tab>"
 inoremap <silent><expr><S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>"
 "nmap
+nnoremap <C-/> <leader>c<leader>
 nnoremap ; :
 nnoremap <Esc><Esc> :nohlsearch<CR>
 nnoremap <silent> dh :ALEGoToDefinitionInSplit<cr>
