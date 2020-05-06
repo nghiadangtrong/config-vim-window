@@ -28,7 +28,7 @@ Plug 'dyng/ctrlsf.vim'
 "Plug 'ianks/vim-tsx'
 "Plug 'herringtondarkholme/yats.vim'
 
-Plug 'kien/ctrlp.vim' " Tìm kiếm file trên trong project hiện tại
+Plug 'kien/ctrlp.vim' " Tìm kiếm file trên project hiện tại
 Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
 Plug 'junegunn/vim-easy-align' " Căn vị trí ký tự = thẳng hàng
 
