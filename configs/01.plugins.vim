@@ -25,16 +25,28 @@ Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
 Plug 'dyng/ctrlsf.vim'
 
 "typescript
-"Plug 'ianks/vim-tsx'
-"Plug 'herringtondarkholme/yats.vim'
+Plug 'ianks/vim-tsx'
+Plug 'herringtondarkholme/yats.vim'
 
 Plug 'kien/ctrlp.vim' " Tìm kiếm file trên project hiện tại
 Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
 Plug 'junegunn/vim-easy-align' " Căn vị trí ký tự = thẳng hàng
 
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Tim kiem file
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Tim kiem file
 "Plug 'benmills/vimux'
 
 "Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+
+" EditorConfig
+Plug 'editorconfig/editorconfig-vim'
+
+" Language support things
+Plug 'sheerun/vim-polyglot'
+Plug 'rust-lang/rust.vim'
+Plug 'othree/html5.vim'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'ap/vim-css-color'
+
+Plug 'mileszs/ack.vim' " Tìm kiếm text trên nhiều file
 
 call plug#end()

@@ -32,6 +32,16 @@ set nobackup
 set noswapfile
 set nowrap
 
+" Ký tự thụt lề
+"set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
+set listchars=trail:~,space:·
+set list
+set expandtab
+
+" tự động cập nhật khi file thay đổi (Bởi chương trình khác)
+set autoread
+set autowrite
+
 set visualbell
 set noerrorbells
 "imap
@@ -71,3 +81,8 @@ nmap <leader>s <Plug>CtrlSFPrompt
 vmap <leader>sw <Plug>CtrlSFVwordPath
 "terminal mapping
 tnoremap <Esc> <C-\><C-n>
+
+" Setting phím Tab để cách dòng
+nnoremap <S-Tab> <<
+nnoremap <Tab> >>
+inoremap <S-Tab> <C-d>
