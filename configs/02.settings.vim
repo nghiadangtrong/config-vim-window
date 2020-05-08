@@ -26,7 +26,6 @@ set smartcase
 set tabstop=2
 set softtabstop=0
 set shiftwidth=2
-set expandtab
 set lazyredraw
 set nobackup
 set noswapfile
@@ -34,7 +33,7 @@ set nowrap
 
 " Ký tự thụt lề
 "set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:·
-set listchars=trail:~,space:·
+set listchars=eol:¬,trail:~,space:·
 set list
 set expandtab
 
