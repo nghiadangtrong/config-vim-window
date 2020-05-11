@@ -85,7 +85,6 @@ let g:ale_linters = {
 \}
 " auto xóa khoảng trắng : '*': ['remove_trailing_lines', 'trim_whitespace','prettier'],
 let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace', 'prettier'],
 \   'python': ['black']
 \}
 let g:ale_fix_on_save = 1
@@ -111,7 +110,7 @@ function! s:show_documentation()
     xecute 'h '.expand('<cword>')
   else
     call CocAction('doHover')
-  endif
+  ndif
 endfunction
 "===== end of Coc-nvim======
 "leaderF

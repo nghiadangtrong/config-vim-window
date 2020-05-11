@@ -68,6 +68,10 @@ noremap <silent> <c-j> :wincmd j<CR>
 noremap <silent> <c-h> :wincmd h<CR>
 noremap <silent> <c-l> :wincmd l<CR>
 
+" setting buffer
+noremap <silent> <c-9> :bprevious<CR>
+noremap <silent> <c-0> :bnext<CR>
+
 "escape highlight search
 "copy/pase
 vnoremap < <gv
