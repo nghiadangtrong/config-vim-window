@@ -7,13 +7,15 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeShowHidden = 1
 let g:NERDDefaultAlign = 'left'
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDTreeChDirMode=2
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules', '.git']
 let g:NERDTreeShowBookmarks=1
 
 "NERDComment
-let g:NERDCustomDelimiters = { 'javascript.jsx': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' } }
+let g:NERDCustomDelimiters = {
+  \ 'c': { 'left': '/**','right': '*/' },
+  \ 'javascript': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' }
+\}
 
 "typescript
 let g:typescript_indent_disable = 1
@@ -81,8 +83,9 @@ let g:ale_linters = {
 \   'typescript': ['tslint'],
 \   'python': ['pylint'],
 \}
+" auto xóa khoảng trắng : '*': ['remove_trailing_lines', 'trim_whitespace','prettier'],
 let g:ale_fixers = {
-\   '*': ['remove_trailing_lines', 'trim_whitespace','prettier'],
+\   '*': ['remove_trailing_lines', 'trim_whitespace', 'prettier'],
 \   'python': ['black']
 \}
 let g:ale_fix_on_save = 1
