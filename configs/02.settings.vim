@@ -71,6 +71,10 @@ noremap <silent> <c-l> :wincmd l<CR>
 " setting buffer
 noremap <silent> <c-9> :bprevious<CR>
 noremap <silent> <c-0> :bnext<CR>
+noremap <silent> <leader>= :vertical resize +5<CR>
+noremap <silent> <leader>- :vertical resize -5<CR>
+noremap <silent> <leader>+ :resize +5<CR>
+noremap <silent> <leader>_ :resize -5<CR>
 
 "escape highlight search
 "copy/pase
