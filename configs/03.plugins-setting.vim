@@ -44,7 +44,7 @@ let g:ctrlp_custom_ignore = {
 " Prettier
 "let g:prettier#autoformat = 1
 "let g:prettier#config#print_width = 80
-let g:prettier#config#trailing_comma = 'es5'
+"let g:prettier#config#trailing_comma = 'es5'
 "let g:prettier#config#jsx_bracket_same_line = 'true'
 "let g:prettier#config#jsxSingleQuote = 'true'
 "let g:prettier#config#bracket_spacing = 'true'
@@ -104,6 +104,8 @@ let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', '
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
+
+inoremap <silent><expr> <c-space> coc#refresh()
 
 function! s:show_documentation()
   if (index(['nvim','help'], &filetype) >= 0)
