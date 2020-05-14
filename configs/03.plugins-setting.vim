@@ -44,12 +44,13 @@ let g:ctrlp_custom_ignore = {
 " Prettier
 "let g:prettier#autoformat = 1
 "let g:prettier#config#print_width = 80
-"let g:prettier#config#trailing_comma = 'es5'
+"let g:prettier#config#trailing_comma = 'es6'
 "let g:prettier#config#jsx_bracket_same_line = 'true'
 "let g:prettier#config#jsxSingleQuote = 'true'
 "let g:prettier#config#bracket_spacing = 'true'
 "let g:prettier#config#arrow_parens = 'always'
 "autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.md,*.vue,*.yaml,*.html,*.py Prettier
+
 " AUTO CLOSE TAGS
 let g:closetag_filenames = '*.html,*.jsx,*.tsx,*.js,*.vue'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js,*.vue'
@@ -64,9 +65,6 @@ let g:enable_bold_font = 1
 "CLOSE BUFFER
 let bclose_multiple = 0
 
-"SETUP python
-"let g:python_host_prog = '/Users/tiny/.pyenv/versions/neovim2/bin/python'
-"let g:python3_host_prog = '/Users/tiny/.pyenv/versions/neovim3/bin/python'
 "MULTI COSUR
 let g:multi_cursor_select_all_word_key = '<c-a>'
 let g:multi_cursor_quit_key='<Esc>'
@@ -100,6 +98,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 let g:EasyMotion_smartcase = 1
 
 "====== COC-NVIM ======
+"let g:coc_global_extensions = ['coc-eslint', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
 set updatetime=300
 set shortmess+=c

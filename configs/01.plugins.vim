@@ -41,7 +41,7 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'editorconfig/editorconfig-vim'
 
 " Language support things
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 "Plug 'rust-lang/rust.vim'
 "Plug 'othree/html5.vim'
 "Plug 'cakebaker/scss-syntax.vim'
