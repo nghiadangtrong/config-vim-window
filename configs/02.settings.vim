@@ -93,3 +93,7 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <S-Tab> <<
 nnoremap <Tab> >>
 inoremap <S-Tab> <C-d>
+
+nnoremap d "_d
+xnoremap d "_d
+xnoremap p "_dP

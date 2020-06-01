@@ -8,8 +8,8 @@ let NERDTreeDirArrows = 1
 let NERDTreeShowHidden = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules', '.git']
-let g:NERDTreeShowBookmarks=1
+"let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules', '.git']
+"let g:NERDTreeShowBookmarks=1
 
 "NERDComment
 let g:NERDCustomDelimiters = {
