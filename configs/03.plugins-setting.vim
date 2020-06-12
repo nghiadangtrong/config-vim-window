@@ -9,6 +9,7 @@ let NERDTreeShowHidden = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDTreeChDirMode=2
 "let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules', '.git']
+let g:NERDTreeIgnore=['__pycache__', 'node_modules', '.git']
 let g:NERDTreeShowBookmarks=3
 
 "NERDComment
@@ -25,7 +26,8 @@ set background=dark
 highlight Normal ctermbg=None
 colorscheme gruvbox
 set termguicolors
-"airline
+
+"airline ~ Hiển thị thông tin tệp đã mở
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
@@ -33,6 +35,7 @@ let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
+
 "DEOPLETE
 let g:deoplete#enable_at_startup = 1
 
@@ -41,6 +44,7 @@ let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/](node_modules|build|public|lib|dist)|(\.(git|svn))$',
     \ 'file': 'tags\|tags.lock\|tags.temp',
 \ }
+
 " Prettier
 "let g:prettier#autoformat = 1
 "let g:prettier#config#print_width = 80
@@ -69,24 +73,32 @@ let bclose_multiple = 0
 let g:multi_cursor_select_all_word_key = '<c-a>'
 let g:multi_cursor_quit_key='<Esc>'
 let g:multi_cursor_exit_from_insert_mode=1
+
 "Emmet
-let g:user_emmet_leader_key='<C-Z>'
-let g:jsx_ext_required = 1
-let g:jsx_pragma_required = 1
+"let g:user_emmet_leader_key='<C-Z>'
+"let g:jsx_ext_required = 1
+"let g:jsx_pragma_required = 1
+
 "ALE
-let g:ale_sign_error = '>>'
+let g:ale_sign_error = '>-'
 let g:ale_sign_warning = '--'
 let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'typescript': ['tslint'],
 \   'python': ['pylint'],
 \}
+
 " auto xóa khoảng trắng : '*': ['remove_trailing_lines', 'trim_whitespace','prettier'],
 let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\   'typescript': ['tslint'],
 \   'python': ['black']
 \}
+
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
+
 " ======= Snippet =========
 let g:UltiSnipsExpandTrigger="<c-c>"
 let g:UltiSnipsJumpForwardTrigger="<c-k>"
@@ -94,6 +106,7 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 " Use <C-l> for trigger snippet expand.
 "=============end snippet==============
+
 " Easymotion
 let g:EasyMotion_smartcase = 1
 
@@ -125,6 +138,7 @@ let g:jedi#completions_enabled = 0
 let g:jedi#use_splits_not_buffers = "right"
 let g:indentLine_enabled = 0
 
+" Search text in file = ACK
 " setting AG
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'

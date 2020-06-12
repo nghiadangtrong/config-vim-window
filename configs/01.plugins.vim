@@ -27,6 +27,7 @@ Plug 'dyng/ctrlsf.vim'
 "typescript
 Plug 'ianks/vim-tsx'
 Plug 'herringtondarkholme/yats.vim'
+Plug 'leafgarland/typescript-vim'
 
 Plug 'kien/ctrlp.vim' " Tìm kiếm file trên project hiện tại
 Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
