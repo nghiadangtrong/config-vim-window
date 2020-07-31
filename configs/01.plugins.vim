@@ -50,4 +50,6 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'mileszs/ack.vim' " Tìm kiếm text trên nhiều file
 
+Plug 'nathanaelkane/vim-indent-guides' " dóng hàng
+
 call plug#end()

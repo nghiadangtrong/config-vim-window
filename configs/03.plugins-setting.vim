@@ -18,8 +18,6 @@ let g:NERDCustomDelimiters = {
   \ 'javascript': { 'left': '//', 'leftAlt': '{/*', 'rightAlt': '*/}' }
 \}
 
-"typescript
-let g:typescript_indent_disable = 1
 "Theme
 syntax enable
 set background=dark
@@ -110,12 +108,19 @@ let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 " Easymotion
 let g:EasyMotion_smartcase = 1
 
+"typescript
+let g:typescript_indent_disable = 0
+" seting indent typescript
+"autocmd BufNewFile,BufRead *.tsx,*.jsx,*.ts set filetype=typescript.tsx
+autocmd BufNewFile,BufRead *.ts set filetype=typescript.tsx
+
 "====== COC-NVIM ======
 "let g:coc_global_extensions = ['coc-eslint', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
+
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
@@ -151,3 +156,9 @@ if executable('ag')
   " ag is fast enough that CtrlP doesn't need to cache
   let g:ctrlp_use_caching = 0
 endif
+
+" vim-indent-guides
+"let g:indent_guides_enable_on_vim_startup = 1
+"set ts=2 sw=2 et
+"let g:indent_guides_start_level = 2
+"let g:indent_guides_guide_size = 1
