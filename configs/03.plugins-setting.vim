@@ -114,24 +114,6 @@ let g:typescript_indent_disable = 0
 "autocmd BufNewFile,BufRead *.tsx,*.jsx,*.ts set filetype=typescript.tsx
 autocmd BufNewFile,BufRead *.ts set filetype=typescript.tsx
 
-"====== COC-NVIM ======
-"let g:coc_global_extensions = ['coc-eslint', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
-
-
-inoremap <silent><expr> <c-space> coc#refresh()
-
-function! s:show_documentation()
-  if (index(['nvim','help'], &filetype) >= 0)
-    xecute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  ndif
-endfunction
-"===== end of Coc-nvim======
 "leaderF
 let g:Lf_ShortcutF = '<C-P>'
 let g:Lf_PreviewInPopup = 1

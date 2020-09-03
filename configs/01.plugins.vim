@@ -47,9 +47,11 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 "Plug 'othree/html5.vim'
 "Plug 'cakebaker/scss-syntax.vim'
 "Plug 'ap/vim-css-color'
+Plug 'joukevandermaas/vim-ember-hbs'
 
 Plug 'mileszs/ack.vim' " Tìm kiếm text trên nhiều file
 
 Plug 'nathanaelkane/vim-indent-guides' " dóng hàng
+Plug 'ekalinin/dockerfile.vim'
 
 call plug#end()
