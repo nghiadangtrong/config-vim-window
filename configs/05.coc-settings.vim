@@ -17,6 +17,6 @@ function! s:show_documentation()
     xecute 'h '.expand('<cword>')
   else
     call CocAction('doHover')
-  ndif
+  endif
 endfunction
 "===== end of Coc-nvim======
