@@ -10,7 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
-"Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
@@ -37,6 +37,7 @@ Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo
 "Plug 'benmills/vimux'
 
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " EditorConfig
 "Plug 'editorconfig/editorconfig-vim'
