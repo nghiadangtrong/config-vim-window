@@ -8,8 +8,6 @@ let NERDTreeDirArrows = 1
 let NERDTreeShowHidden = 1
 let g:NERDDefaultAlign = 'left'
 let g:NERDTreeChDirMode=2
-"let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules', '.git']
-"let g:NERDTreeIgnore=['__pycache__', 'node_modules', '.git']
 let g:NERDTreeShowBookmarks=3
 
 "NERDComment
@@ -42,16 +40,6 @@ let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/](node_modules|build|public|lib|dist)|(\.(git|svn))$',
     \ 'file': 'tags\|tags.lock\|tags.temp',
 \ }
-
-" Prettier
-"let g:prettier#autoformat = 1
-"let g:prettier#config#print_width = 80
-"let g:prettier#config#trailing_comma = 'es6'
-"let g:prettier#config#jsx_bracket_same_line = 'true'
-"let g:prettier#config#jsxSingleQuote = 'true'
-"let g:prettier#config#bracket_spacing = 'true'
-"let g:prettier#config#arrow_parens = 'always'
-"autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.md,*.vue,*.yaml,*.html,*.py Prettier
 
 " AUTO CLOSE TAGS
 let g:closetag_filenames = '*.html,*.jsx,*.tsx,*.js,*.vue'
@@ -111,7 +99,6 @@ let g:EasyMotion_smartcase = 1
 "typescript
 let g:typescript_indent_disable = 0
 " seting indent typescript
-"autocmd BufNewFile,BufRead *.tsx,*.jsx,*.ts set filetype=typescript.tsx
 autocmd BufNewFile,BufRead *.ts set filetype=typescript.tsx
 
 "leaderF

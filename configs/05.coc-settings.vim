@@ -2,14 +2,12 @@ let g:coc_global_extensions = [
   \ 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json',
   \ 'coc-git', 'coc-emoji', 'coc-webpack', 'coc-rls', 'coc-sql',
   \ 'coc-styled-components', 'coc-sh', 'coc-python', 'coc-html',
-  \ 'coc-gitignore', 'coc-docker', 'coc-cssmodules', 'coc-marketplace',
-  \ 'coc-prettier'
+  \ 'coc-gitignore', 'coc-docker', 'coc-cssmodules', 'coc-marketplace'
 \]
 "let g:coc_global_extensions = ['coc-eslint', 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json']
 set updatetime=300
 set shortmess+=c
 set signcolumn=yes
-
 
 inoremap <silent><expr> <c-space> coc#refresh()
 
