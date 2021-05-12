@@ -42,4 +42,5 @@ Plug 'ekalinin/dockerfile.vim'
 
 Plug 'apzelos/blamer.nvim' " Like gitLen
 
+Plug 'jwalton512/vim-blade'
 call plug#end()
