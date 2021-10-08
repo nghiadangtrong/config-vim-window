@@ -1,46 +1,48 @@
 call plug#begin('C:\Users\dang.trong.nghia\AppData\Local\nvim\bundle')
-Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+
 Plug 'scrooloose/nerdtree'
-Plug 'alvan/vim-closetag'
-Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdcommenter'
-Plug 'morhetz/gruvbox'
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
-Plug 'terryma/vim-multiple-cursors'
+
+" ----------- Basic ------------
+Plug 'alvan/vim-closetag'
+Plug 'easymotion/vim-easymotion' " Di chuyển nhanh cursor
+Plug 'jiangmiao/auto-pairs' " Tự động hoàn thành cặp ký tự đôi (vd: [ => [], ....)
+Plug 'tpope/vim-surround' " Thay đổi dấu ngoặc bao quanh \", \{, \'
+"Plug 'mattn/emmet-vim' " Viết mã html nhanh: ul>3*li>
+
+" ----------- Theme ------------
+Plug 'morhetz/gruvbox' " Theme
+Plug 'vim-airline/vim-airline' " Hiển thị thanh thông tin thanh bar góc cuối bên phải
+Plug 'vim-airline/vim-airline-themes' " Hiển thị thanh thông tin thanh bar góc cuối bên phải
+
+" ----------- Tìm kiếm -------------
+"Plug 'Shougo/denite.nvim' " Tìm kiếm đang không dùng
+
+"fzf
+"Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
+Plug 'dyng/ctrlsf.vim' " Tìm kiếm text
+
+Plug 'kien/ctrlp.vim' " Tìm kiếm file trên project hiện tại
+Plug 'mileszs/ack.vim' " Tìm kiếm text trên nhiều file
+"
+" ----------- Syntax -----------
+
+"Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+
+Plug 'w0rp/ale' " Hiển thị lỗi syntax
+
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'mattn/emmet-vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'w0rp/ale'
-"Plug 'galooshi/vim-import-js'
-Plug 'Shougo/denite.nvim'
-"snippets
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"Plug 'honza/vim-snippets'
-"Plug 'SirVer/ultisnips'
-"fzf
-Plug 'Yggdroot/LeaderF', { 'do': '.\install.bat' }
-Plug 'dyng/ctrlsf.vim'
 
 "typescript
 Plug 'ianks/vim-tsx'
 Plug 'herringtondarkholme/yats.vim'
 Plug 'leafgarland/typescript-vim'
 
-Plug 'kien/ctrlp.vim' " Tìm kiếm file trên project hiện tại
-Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
-"Plug 'junegunn/vim-easy-align' " Căn vị trí ký tự = thẳng hàng
-
-"Plug 'benmills/vimux'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
-Plug 'joukevandermaas/vim-ember-hbs'
-Plug 'mileszs/ack.vim' " Tìm kiếm text trên nhiều file
-Plug 'nathanaelkane/vim-indent-guides' " dóng hàng
-Plug 'ekalinin/dockerfile.vim'
 
+" ------------- Git ------------
 Plug 'apzelos/blamer.nvim' " Like gitLen
+"Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
 
-Plug 'jwalton512/vim-blade'
 call plug#end()
