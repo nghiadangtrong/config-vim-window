@@ -65,23 +65,3 @@ vnoremap > >gv
 "copy/pase
 set clipboard+=unnamedplus
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-
-" Set font-size
-if has("gui_running")
-  if has("gui_gtk2")
-    set guifont=Inconsolata\ 8
-  elseif has("gui_macvim")
-    set guifont=Menlo\ Regular:h10
-  elseif has("gui_win32")
-    set guifont=Consolas:h8:cANSI
-  endif
-endif
-
-" setting fron-size
-"execute join(["GuiFont! ", split(GuiFont, ":")[0], ":h9"], "")
-let s:is_windows = (has("win32") || has("win64"))
-if s:is_windows
-  if has("gui_running")
-     execute join(["GuiFont! ", split(GuiFont, ":")[0], ":h9"], "")
-  endif
-endif
