@@ -11,6 +11,7 @@ autocmd BufEnter * :set scroll=10
 syntax on
 set encoding=UTF-8
 set mouse=a
+set cursorline
 
 set history=1000
 set undolevels=1000
@@ -19,15 +20,18 @@ set incsearch
 set hlsearch
 
 set number
-set relativenumber
+"set relativenumber " Cách hiển thị số dòng
 set ignorecase
 set smartcase
+
+set hidden
 
 set tabstop=2
 set softtabstop=0
 set shiftwidth=2
 set lazyredraw
 set nobackup
+set nowritebackup
 set noswapfile
 set nowrap
 
@@ -43,53 +47,30 @@ set autowrite
 
 set visualbell
 set noerrorbells
+
 "imap
 inoremap jj <ESC>
 inoremap ww <ESC>:w<cr>
-inoremap <silent> <c-l> <ESC>la
-inoremap <silent><expr><Tab> pumvisible() ? "\<C-N>" : "\<Tab>"
-inoremap <silent><expr><S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>"
+
 "nmap
-nnoremap <C-/> <leader>c<leader>
+nmap <C-/> <leader>c<leader>
 nnoremap ; :
 nnoremap <Esc><Esc> :nohlsearch<CR>
-nnoremap <silent> dh :ALEGoToDefinitionInSplit<cr>
-nnoremap <silent> dv :ALEGoToDefinitionInVSplit<cr>
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
-nnoremap <silent> <c-x> :BD<cr>
-noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
-noremap Y y$
-nmap <silent> ff <Plug>(easymotion-overwin-f2)
-nmap <silent> fl <Plug>(easymotion-overwin-line)
-nmap <leader>rn <Plug>(coc-rename)
-noremap <silent> <c-k> :wincmd k<CR>
-noremap <silent> <c-j> :wincmd j<CR>
-noremap <silent> <c-h> :wincmd h<CR>
-noremap <silent> <c-l> :wincmd l<CR>
 
-" setting buffer
-noremap <silent> <c-9> :bprevious<CR>
-noremap <silent> <c-0> :bnext<CR>
-noremap <silent> <leader>= :vertical resize +5<CR>
-noremap <silent> <leader>- :vertical resize -5<CR>
-noremap <silent> <leader>+ :resize +5<CR>
-noremap <silent> <leader>_ :resize -5<CR>
-
-"escape highlight search
 "copy/pase
-vnoremap < <gv
-vnoremap > >gv
 set clipboard+=unnamedplus
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
-"ctrslf
-nmap <leader>s <Plug>CtrlSFPrompt
-vmap <leader>sw <Plug>CtrlSFVwordPath
+"Theme
+syntax enable
+set background=dark
+highlight Normal ctermbg=None
+colorscheme gruvbox
+set termguicolors
+
 "terminal mapping
 tnoremap <Esc> <C-\><C-n>
 
-" Setting phím Tab để cách dòng
-nnoremap <S-Tab> <<
-nnoremap <Tab> >>
-inoremap <S-Tab> <C-d>
+" Làm lỗi <C-i>
+"nnoremap <S-Tab> <<
+"nnoremap <Tab> >>
