@@ -116,10 +116,13 @@ let s:TYPE = {
 let s:loaded = get(s:, 'loaded', {})
 let s:triggers = get(s:, 'triggers', {})
 
+<<<<<<< HEAD
 function! s:is_powershell(shell)
   return a:shell =~# 'powershell\(\.exe\)\?$' || a:shell =~# 'pwsh\(\.exe\)\?$'
 endfunction
 
+=======
+>>>>>>> 7ea3a27ae40ef4ce6617189a3048d8d9544ab581
 function! s:isabsolute(dir) abort
   return a:dir =~# '^/' || (has('win32') && a:dir =~? '^\%(\\\|[A-Z]:\)')
 endfunction
@@ -267,7 +270,11 @@ function! s:define_commands()
   endif
   if has('win32')
   \ && &shellslash
+<<<<<<< HEAD
   \ && (&shell =~# 'cmd\(\.exe\)\?$' || s:is_powershell(&shell))
+=======
+  \ && (&shell =~# 'cmd\(\.exe\)\?$' || &shell =~# 'powershell\(\.exe\)\?$')
+>>>>>>> 7ea3a27ae40ef4ce6617189a3048d8d9544ab581
     return s:err('vim-plug does not support shell, ' . &shell . ', when shellslash is set.')
   endif
   if !has('nvim')
@@ -507,7 +514,11 @@ if s:is_win
     let batchfile = s:plug_tempname().'.bat'
     call writefile(s:wrap_cmds(a:cmd), batchfile)
     let cmd = plug#shellescape(batchfile, {'shell': &shell, 'script': 0})
+<<<<<<< HEAD
     if s:is_powershell(&shell)
+=======
+    if &shell =~# 'powershell\(\.exe\)\?$'
+>>>>>>> 7ea3a27ae40ef4ce6617189a3048d8d9544ab581
       let cmd = '& ' . cmd
     endif
     return [batchfile, cmd]
@@ -988,7 +999,11 @@ function! s:chsh(swap)
     set shell=sh
   endif
   if a:swap
+<<<<<<< HEAD
     if s:is_powershell(&shell)
+=======
+    if &shell =~# 'powershell\(\.exe\)\?$' || &shell =~# 'pwsh$'
+>>>>>>> 7ea3a27ae40ef4ce6617189a3048d8d9544ab581
       let &shellredir = '2>&1 | Out-File -Encoding UTF8 %s'
     elseif &shell =~# 'sh' || &shell =~# 'cmd\(\.exe\)\?$'
       set shellredir=>%s\ 2>&1
@@ -2230,7 +2245,11 @@ function! plug#shellescape(arg, ...)
   let script = get(opts, 'script', 1)
   if shell =~# 'cmd\(\.exe\)\?$'
     return s:shellesc_cmd(a:arg, script)
+<<<<<<< HEAD
   elseif s:is_powershell(shell)
+=======
+  elseif shell =~# 'powershell\(\.exe\)\?$' || shell =~# 'pwsh$'
+>>>>>>> 7ea3a27ae40ef4ce6617189a3048d8d9544ab581
     return s:shellesc_ps1(a:arg)
   endif
   return s:shellesc_sh(a:arg)
@@ -2282,7 +2301,11 @@ function! s:system(cmd, ...)
         return system(a:cmd)
       endif
       let cmd = join(map(copy(a:cmd), 'plug#shellescape(v:val, {"shell": &shell, "script": 0})'))
+<<<<<<< HEAD
       if s:is_powershell(&shell)
+=======
+      if &shell =~# 'powershell\(\.exe\)\?$'
+>>>>>>> 7ea3a27ae40ef4ce6617189a3048d8d9544ab581
         let cmd = '& ' . cmd
       endif
     else

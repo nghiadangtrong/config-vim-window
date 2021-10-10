@@ -1,4 +1,9 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
 let g:netrw_dirhist_cnt =2
 let g:netrw_dirhist_1='C:\Users\NOAN\.config\nvim\configs'
 let g:netrw_dirhist_2='C:/Users/Noan/.config/nvim/configs'
+=======
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='D:\Projects\campsite'
+>>>>>>> 7ea3a27ae40ef4ce6617189a3048d8d9544ab581

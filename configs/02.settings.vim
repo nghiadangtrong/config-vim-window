@@ -5,7 +5,6 @@ filetype plugin indent on
 
 let g:python_host_prog = expand('C:\Python27\python.exe')
 let g:python3_host_prog = expand('C:\Python38\python.exe')
-let g:deoplete#enable_at_startup = 1
 
 autocmd BufEnter * :set scroll=10
 syntax on
@@ -71,6 +70,35 @@ set termguicolors
 "terminal mapping
 tnoremap <Esc> <C-\><C-n>
 
+<<<<<<< HEAD
 " Làm lỗi <C-i>
 "nnoremap <S-Tab> <<
 "nnoremap <Tab> >>
+=======
+" Setting phím Tab để cách dòng
+nnoremap <S-Tab> <<
+nnoremap <Tab> >>
+inoremap <S-Tab> <C-d>
+
+nnoremap d "_d
+xnoremap d "_d
+xnoremap p "_dP
+
+" config file blade.php
+"autocmd BufNewFile,BufRead *.blade.php set syntax=html
+"autocmd BufNewFile,BufRead *.blade.php set filetype=html
+
+" Set font-size
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 8
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h10
+  elseif has("gui_win32")
+    set guifont=Consolas:h8:cANSI
+  endif
+endif
+
+" setting fron-size
+execute join(["GuiFont! ", split(GuiFont, ":")[0], ":h9"], "")
+>>>>>>> 7ea3a27ae40ef4ce6617189a3048d8d9544ab581
