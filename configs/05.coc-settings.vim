@@ -1,12 +1,8 @@
 let g:coc_global_extensions = [
-  \ 'coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json',
-  \ 'coc-emoji', 'coc-webpack', 'coc-rls', 'coc-sql',
-  \ 'coc-styled-components', 'coc-sh', 'coc-python', 'coc-html',
-  \ 'coc-docker', 'coc-cssmodules', 'coc-marketplace',
-  \ 'coc-phpls', 'coc-phpls'
+  \ 'coc-tsserver', 'coc-css',
+  \ 'coc-marketplace', 'coc-emoji',
 \]
-"set signcolumn=yes
-
+" 'coc-tslint-plugin',
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -27,12 +23,12 @@ set shortmess+=c
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
-if has("nvim-0.5.0") || has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+"if has("nvim-0.5.0") || has("patch-8.1.1564")
+"  " Recently vim can merge signcolumn and number column into one
+"  set signcolumn=number
+"else
+"  set signcolumn=yes
+"endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
