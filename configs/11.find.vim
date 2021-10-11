@@ -13,7 +13,7 @@ vmap <leader>sw <Plug>CtrlSFVwordPath
 
 
 """"""""""""""""""""""""""""""""""""
-"ctrslf
+"ctrslp
 """"""""""""""""""""""""""""""""""""
 " @description
 "   Tìm kiếm File

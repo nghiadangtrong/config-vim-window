@@ -1,5 +1,5 @@
 let g:coc_global_extensions = [
-  \ 'coc-tsserver', 'coc-css',
+  \ 'coc-tsserver', 'coc-css', 'coc-json', 'coc-html',
   \ 'coc-marketplace', 'coc-emoji',
 \]
 " 'coc-tslint-plugin',

@@ -10,6 +10,7 @@ autocmd BufEnter * :set scroll=10
 syntax on
 set encoding=UTF-8
 set mouse=a
+set cursorline
 
 set history=1000
 set undolevels=1000
@@ -54,9 +55,6 @@ nnoremap <C-/> <leader>c<leader>
 nnoremap ; :
 nnoremap <Esc><Esc> :nohlsearch<CR>
 
-" ALe Hiển thị lỗi systax
-nnoremap <silent> dh :ALEGoToDefinitionInSplit<cr>
-nnoremap <silent> dv :ALEGoToDefinitionInVSplit<cr>
 
 "escape highlight search
 vnoremap < <gv

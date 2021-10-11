@@ -42,7 +42,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 " ------------- Git ------------
-Plug 'apzelos/blamer.nvim' " Like gitLen
+" Plug 'apzelos/blamer.nvim' " Like gitLen
 "Plug 'airblade/vim-gitgutter' 	" Hiển thị trạng thái thay đổi git theo từng dòng
 
 call plug#end()
