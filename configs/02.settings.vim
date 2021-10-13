@@ -63,3 +63,9 @@ vnoremap > >gv
 "copy/pase
 set clipboard+=unnamedplus
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" Cài đặt - paste text
+"   Khi paste text giá trị copy bị mất
+nnoremap d "_d
+xnoremap d "_d
+xnoremap p "_dP
