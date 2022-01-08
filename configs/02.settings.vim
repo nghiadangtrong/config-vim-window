@@ -73,3 +73,9 @@ tnoremap <Esc> <C-\><C-n>
 " Làm lỗi <C-i>
 "nnoremap <S-Tab> <<
 "nnoremap <Tab> >>
+
+"Fix copy - paste text
+"   Khi paste text giá trị copy bị mất
+nnoremap d "_d
+xnoremap d "_d
+xnoremap p "_dP
